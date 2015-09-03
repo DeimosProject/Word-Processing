@@ -14,14 +14,7 @@ class WordProcessingWithMorphy extends WordProcessingAbstract
             else {
                 $lang = 'en';
             }
-            if (preg_match('/[-]/u', $word)) {
-                $explode = explode("-", $word);
-                $new_word = array_pop($explode);
-                $_word = $morphy->get($lang)->getBaseForm($new_word);
-            }
-            else {
-                $_word = $morphy->get($lang)->getBaseForm($word);
-            }
+            $_word = $morphy->get($lang)->getBaseForm($word);
             if ($_word) {
                 if (is_array($_word)) {
                     $word = current($_word);
@@ -29,11 +22,6 @@ class WordProcessingWithMorphy extends WordProcessingAbstract
                 else {
                     $word = $_word;
                 }
-                if (isset($explode)) {
-                    $explode = implode("-", $explode);
-                    $word = $explode . "-" . $word;
-                }
-                unset($explode);
             }
         }
         return $words;

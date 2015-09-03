@@ -1,0 +1,32 @@
+{
+  "name": "deimos/wordprocessing",
+  "keywords": [
+    "word",
+    "processing"
+  ],
+  "description": "Word Processing",
+  "homepage": "http://babichev.net",
+  "type": "library",
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "Maxim Babichev",
+      "email": "maksim.babichev95@gmail.com",
+      "homepage": "http://babichev.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "deimos/phpmorphy": "2.*@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "Deimos": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.*-dev"
+    }
+  }
+}

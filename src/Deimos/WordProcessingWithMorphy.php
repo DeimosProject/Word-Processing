@@ -4,7 +4,7 @@ namespace Deimos;
 
 class WordProcessingWithMorphy extends WordProcessingAbstract
 {
-    public function processing($words)
+    protected function processing($words)
     {
         $morphy = new phpMorphy();
         foreach ($words as &$word) {

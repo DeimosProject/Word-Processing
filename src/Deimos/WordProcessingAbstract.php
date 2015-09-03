@@ -43,13 +43,26 @@ class WordProcessingAbstract
      * @param $words array
      * @return array
      */
-    public abstract function processing($words);
+    protected abstract function processing($words);
+
+    /**
+     * @param $arrayWeights array
+     * @return array
+     */
+    public function getWordsCRC32($arrayWeights)
+    {
+        $crc32 = [];
+        foreach ($arrayWeights as $row) {
+            $crc32[] = $row->crc32;
+        }
+        return $crc32;
+    }
 
     /**
      * @param $content
      * @return array
      */
-    public function getWeight($content)
+    public function getArrayWeights($content)
     {
 
         $words = $this->getWorlds($content);

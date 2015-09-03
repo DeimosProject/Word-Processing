@@ -16,7 +16,12 @@ class WordProcessingWithMorphy extends WordProcessingAbstract
             }
             $_word = $morphy->get($lang)->getBaseForm($word);
             if ($_word) {
-                $word = $_word;
+                if (is_array($_word)) {
+                    $word = current($_word);
+                }
+                else {
+                    $word = $_word;
+                }
             }
         }
         return $words;

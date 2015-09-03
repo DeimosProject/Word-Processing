@@ -32,21 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordProcessingWithMorphy.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordProcessingWithMorphy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingWithMorphy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6437177">
+            <state vertical-scroll-proportion="-14.384615">
               <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordProcessingAbstract.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordProcessingAbstract.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingAbstract.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.64888126">
+              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
         <option value="$PROJECT_DIR$/src/Deimos/WordProcessing.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Deimos/WordProcessingAbstract.php" />
         <option value="$PROJECT_DIR$/src/Deimos/WordProcessingWithMorphy.php" />
+        <option value="$PROJECT_DIR$/src/Deimos/WordProcessingAbstract.php" />
       </list>
     </option>
   </component>
@@ -270,18 +270,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingAbstract.php">
+    <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingWithMorphy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingWithMorphy.php">
+    <entry file="file://$PROJECT_DIR$/src/Deimos/WordProcessingAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6437177">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.64888126">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding />
         </state>
       </provider>

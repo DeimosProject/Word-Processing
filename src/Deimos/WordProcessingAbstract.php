@@ -79,6 +79,7 @@ class WordProcessingAbstract
                 $_row[$word]->crc32 = crc32($word);
                 $_row[$word]->repeats = 1;
                 $_row[$word]->weight = 0;
+                $_row[$word]->other = 0;
                 $_word = str_split($word);
                 foreach ($_word as $char) {
                     if (isset($this->frequencyLetters[$char])) {
@@ -86,7 +87,11 @@ class WordProcessingAbstract
                     }
                     else {
                         $_row[$word]->weight += $this->frequencyLetters['other'];
+                        $_row[$word]->other++;
                     }
+                }
+                if ($_row[$word]->other) {
+                    $_row[$word]->weight /= ($_row[$word]->other + 1);
                 }
             }
         }

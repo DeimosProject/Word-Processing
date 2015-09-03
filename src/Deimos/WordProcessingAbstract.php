@@ -80,8 +80,9 @@ class WordProcessingAbstract
                 $_row[$word]->repeats = 1;
                 $_row[$word]->weight = 0;
                 $_row[$word]->other = 0;
-                $_word = str_split($word);
-                foreach ($_word as $char) {
+                $length = mb_strlen($word);
+                for ($i = 0; $i < $length; $i++) {
+                    $char = mb_substr($word, $i, 1);
                     if (isset($this->frequencyLetters[$char])) {
                         $_row[$word]->weight += $this->frequencyLetters[$char];
                     }

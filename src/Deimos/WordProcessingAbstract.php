@@ -87,7 +87,6 @@ class WordProcessingAbstract
                         $_row[$word]->weight += $this->frequencyLetters[$char];
                     }
                     else {
-                        var_dump($char);
                         $_row[$word]->weight += $this->frequencyLetters['other'];
                         $_row[$word]->other++;
                     }
@@ -109,17 +108,17 @@ class WordProcessingAbstract
     private function getWorlds($content)
     {
 
+        $content = mb_strtoupper($content);
         $content = htmlspecialchars_decode($content, ENT_QUOTES);
-        $content = preg_replace('/[<]+/', ' <', $content);
-        $content = preg_replace('/[>]+/', '> ', $content);
-        $content = preg_replace('/[\s\t\n\r]+/', ' ', $content);
-        $content = preg_replace('/&[\w]+[;]{0,1}/', ' ', $content);
+        $content = preg_replace('/[<]+/ui', ' <', $content);
+        $content = preg_replace('/[>]+/ui', '> ', $content);
+        $content = preg_replace('/[\s\t\n\r]+/ui', ' ', $content);
+        $content = preg_replace('/&[\w]+[;]{0,1}/ui', ' ', $content);
         $content = strip_tags($content);
 
-        $content = mb_strtoupper($content);
-        $content = preg_replace('/Ё/u', 'Е', $content);
+        $content = preg_replace('/Ё/ui', 'Е', $content);
 
-        preg_match_all("/([\w\d]+-[\w\d]+|[\w\d]+_[\w\d]+|[\w\d]+)/u", $content, $out);
+        preg_match_all("/([\w\d]+-[\w\d]+|[\w\d]+_[\w\d]+|[\w\d]+)/ui", $content, $out);
 
         if (count($out)) {
 

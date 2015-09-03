@@ -8,7 +8,7 @@ class WordProcessingWithMorphy extends WordProcessingAbstract
     {
         $morphy = new phpMorphy();
         foreach ($words as &$word) {
-            if (preg_match('/[а-я]+/u', $word)) {
+            if (preg_match('/[а-я]+/ui', $word)) {
                 $lang = 'ru';
             }
             else {
@@ -33,6 +33,7 @@ class WordProcessingWithMorphy extends WordProcessingAbstract
                     $explode = implode("-", $explode);
                     $word = $explode . "-" . $word;
                 }
+                unset($explode);
             }
         }
         return $words;
